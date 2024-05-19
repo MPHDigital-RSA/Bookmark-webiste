@@ -29,8 +29,9 @@ body {
 }
 
 .container {
-    width: 70em;
+    max-width: 70em;
     margin: auto;
+    padding-inline: 2em;
     /* background-color: green; */
 }
 
@@ -141,7 +142,7 @@ nav a:hover {
 }
 
 .hero img {
-    /* width: 80%; */
+    width: 100%;
     margin-right: -36px;
     z-index: 1;
 }
@@ -217,6 +218,7 @@ nav a:hover {
 }
 
 .courosal-content img {
+    width: 100%;
     z-index: 1;
 }
 
@@ -241,4 +243,71 @@ nav a:hover {
     left: -200px;
     border-radius: 0 200px 200px 0;
     z-index: 0;
+}
+
+
+/* media querries */
+
+@media (max-width: 950px) {
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: unset;
+    }
+
+    .blue-bg-1 {
+        width: 600px;
+        height: 300px;
+        top: 100px;
+
+    }
+
+    .hero img {
+        margin-right: unset;
+    }
+
+    .blue-bg-1 {
+        display: none;
+    }
+
+    .blue-bg-2 {
+        display: none;
+    }
+
+    .hero .left {
+        text-align: center;
+        padding-inline: 2em;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .courosal-nav li {
+        display: block;
+        width: 100%;
+    }
+
+    .features .text {
+        width: 100%;
+        padding-inline: 2em;
+    }
+
+    .courosal-content {
+        flex-direction: column;
+    }
+
+    .courosal-text {
+        text-align: center;
+        align-items: center;
+    }
 }

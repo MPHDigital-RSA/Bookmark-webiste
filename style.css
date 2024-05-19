@@ -24,6 +24,9 @@
     font-size: var(--fs);
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .container {
     width: 70em;
@@ -70,6 +73,16 @@ button:hover {
     color: var(--Very-Dark-Blue);
 }
 
+p {
+    color: var(--Grayish-Blue-2);
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--Very-Dark-Blue);
+    font-weight: var(--fw-bolder);
+}
 
 /* HEADER STYLING */
 
@@ -120,20 +133,15 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    /* padding-left: 40px; */
 }
 
 .hero h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: var(--fw-light);
 }
 
-.hero p {
-    color: var(--Grayish-Blue-2);
-}
-
 .hero img {
-    width: 80%;
+    /* width: 80%; */
     margin-right: -36px;
     z-index: 1;
 }
@@ -154,10 +162,83 @@ nav a:hover {
     height: 300px;
     background-color: var(--Soft-Blue);
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     right: -200px;
     border-radius: 200px 0 0 200px;
     z-index: 0;
 }
 
 /* FEATURES STYLING */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-block: 8em;
+    position: relative;
+}
+
+.features .text {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.features-courosal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.courosal-nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+    border-bottom: 4px solid var(--Grayish-Blue);
+}
+
+.courosal-nav li:hover {
+    color: var(--Soft-Red);
+    cursor: pointer;
+}
+
+#active {
+    border-color: var(--Soft-Red);
+}
+
+.courosal-content {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.courosal-content img {
+    z-index: 1;
+}
+
+.courosal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: start;
+}
+
+.courosal-text button {
+    text-transform: capitalize;
+    letter-spacing: unset;
+}
+
+.blue-bg-2 {
+    width: 500px;
+    height: 300px;
+    background-color: var(--Soft-Blue);
+    position: absolute;
+    bottom: 70px;
+    left: -200px;
+    border-radius: 0 200px 200px 0;
+    z-index: 0;
+}
